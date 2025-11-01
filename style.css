@@ -1,0 +1,104 @@
+body {
+  font-family: "Poppins", "Noto Sans Devanagari", sans-serif;
+  margin: 0;
+  background-color: #f9f9f9;
+  color: #222;
+}
+a { text-decoration: none; color: inherit; }
+img { max-width: 100%; display: block; }
+
+header {
+  background-color: #b02a2a;
+  color: white;
+  padding: 14px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+header h1 { font-size: 1.6rem; margin: 0; }
+nav a { margin: 0 12px; color: white; font-weight: 600; }
+nav a:hover { text-decoration: underline; }
+
+.hero {
+  background: url('https://images.unsplash.com/photo-1623251743794-2dbad0fc4972?auto=format&fit=crop&w=1200&q=60') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 90px 20px;
+}
+.hero h2 {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
+.hero p {
+  font-size: 1.2rem;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+}
+
+.toolbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+.filter-btn, .lang-btn {
+  border: none;
+  background: #fff;
+  border-radius: 20px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: background 0.2s;
+}
+.filter-btn:hover, .lang-btn:hover { background: #ffe8e8; }
+.filter-btn.active { background: #b02a2a; color: white; }
+
+.section-title {
+  text-align: center;
+  margin: 20px 0 10px;
+  font-size: 1.8rem;
+  color: #b02a2a;
+}
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0 20px 60px;
+  max-width: 1200px;
+  margin: auto;
+}
+.card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+.card img { height: 180px; object-fit: cover; }
+.card-body { padding: 14px; }
+.card-body h3 { margin: 0 0 8px; font-size: 1.1rem; color: #333; }
+.card-body p { margin: 0; color: #666; font-size: 0.9rem; }
+
+.contact {
+  background: #fff4f4;
+  padding: 40px 20px;
+  text-align: center;
+}
+.contact h2 { color: #b02a2a; }
+.contact p { font-size: 1rem; margin: 8px 0; }
+
+footer {
+  background-color: #b02a2a;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  font-size: 0.9rem;
+}
